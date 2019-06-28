@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NovoManejo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tViewNovoManejo"
+            style="@style/text_views.no_marginTop"
+            android:drawableLeft="@drawable/nova_lista"
+            android:text="NOVO MANEJO"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/tViewDataManejo"
+            style="@style/text_views_forms"
+            android:text="DATA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tViewNovoManejo"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/edtDataManejo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="10"
+            android:hint="__ /__ /____"
+            android:inputType="date"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tViewDataManejo" />
+
+
+
+        <TextView
+            android:id="@+id/tViewPastoManejo"
+            style="@style/text_views_forms"
+            android:text="PASTO"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDataManejo"
+            tools:ignore="MissingConstraints"/>
+
+        <EditText
+            android:id="@+id/edtPastoManejo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tViewPastoManejo" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="191dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/text_views_forms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOUROS" />
+
+                <TextView
+                    style="@style/text_views_forms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VACAS" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtQntTourosManejo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:maxLength="4"
+                    android:id="@+id/edtQntVacasManejo"/>
+            </TableRow>
+
+            <TextView
+                style="@style/text_views_forms"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="BEZERROS" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/text_views_rows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MACHOS" />
+
+                <TextView
+                    style="@style/text_views_rows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FÊMEAS" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtQntBezMachoManejo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:maxLength="4"
+                    android:id="@+id/edtQntBezFemeaManejo"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:stretchColumns="0,1,2"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_views_forms"
+                android:text="NOVILHAS" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    style="@style/text_views_rows"
+                    android:text="C5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_views_rows"
+                    android:text="C6"  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_views_rows"
+                    android:text="C7"  />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:id="@+id/edtQntNovilhasC5"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:id="@+id/edtQntNovilhasC6"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:maxLength="4"
+                    android:id="@+id/edtQntNovilhasC7"/>
+
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_views_forms"
+                android:text="GARROTES" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_views_rows"
+                    android:text="C5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_views_rows"
+                    android:text="C6"  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_views_rows"
+                    android:text="C7"  />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:id="@+id/edtQntGarroteC5"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:id="@+id/edtQntGarroteC6"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:maxLength="4"
+                    android:id="@+id/edtQntGarroteC7"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/text_views_forms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MORTES" />
+
+                <TextView
+                    style="@style/text_views_forms"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TOTAL" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/edtQntMortesManejo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:id="@+id/edtQntTotalManejo"/>
+            </TableRow>
+
+
+            <TextView
+                style="@style/text_views_forms"/>
+
+                <Button
+                    android:id="@+id/btnDescartarManejo"
+                    style="@style/botoes"
+                    android:drawableLeft="@drawable/descartar"
+                    android:text="DESCARTAR"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/btnSalvarManejo"
+                    style="@style/botoes"
+                    android:drawableLeft="@drawable/salvar"
+                    android:textAlignment="center"
+                    android:text="SALVAR"/>
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

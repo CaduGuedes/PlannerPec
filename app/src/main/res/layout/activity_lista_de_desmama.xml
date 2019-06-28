@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaDeDesmama">
+
+
+
+    <TextView
+        android:id="@+id/tViewListaDeDesmama"
+        android:drawableLeft="@drawable/desmama"
+        style="@style/text_views"
+        android:text="LISTAS DE DESMAMA"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnNovaListaDesmama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNovaListaDesmama"
+        style="@style/botoes"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/nova_lista"
+        android:text="  NOVA LISTA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tViewListaDeDesmama"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAbrirListaDesmama"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/abrir_lista"
+        android:text="  ABRIR LISTA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNovaListaDesmama"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRemoverListaDesmama"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/remover_lista"
+        android:text="  REMOVER LISTA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbrirListaDesmama"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <Button
+        android:id="@+id/btnVoltar"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/voltar"
+        android:text="  Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>

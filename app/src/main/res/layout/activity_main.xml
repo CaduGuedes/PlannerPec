@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="3dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgViewPlanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo_planner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <Button
+        android:id="@+id/btnLista"
+        style="@style/botoes"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/lista"
+        android:text="  LISTA DE AFAZERES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewPlanner" />
+
+    <Button
+        android:id="@+id/btnManejo"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/manejo"
+        android:text="  MANEJO DO GADO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLista" />
+
+    <Button
+        android:id="@+id/btnMapaDoGado"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/mapa_de_gado"
+        android:text="  MAPA DO GADO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnManejo" />
+
+    <Button
+        android:id="@+id/btnDesmama"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/desmama"
+        android:text="  DESMAMA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMapaDoGado" />
+
+    <Button
+        android:id="@+id/btnChuva"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/chuva"
+        android:text="  CHUVA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDesmama" />
+
+    <Button
+        android:id="@+id/btnSal"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/sal"
+        android:text="  SAL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChuva" />
+
+    <Button
+        android:id="@+id/btnVendas"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/vendas"
+        android:text="  VENDAS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSal" />
+
+    <Button
+        android:id="@+id/btnFinanceiro"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/financeiro"
+        android:text="  FINANCEIRO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVendas" />
+
+</android.support.constraint.ConstraintLayout>

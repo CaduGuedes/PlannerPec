@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManejoDoGado">
+
+
+    <TextView
+        android:id="@+id/tViewManejoDoGado"
+        android:drawableLeft="@drawable/manejo"
+        style="@style/text_views"
+        android:text="MANEJO DO GADO"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnNovoManejo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNovoManejo"
+        style="@style/botoes"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/nova_lista"
+        android:text="  NOVO MANEJO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tViewManejoDoGado"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAbrirManejo"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/abrir_lista"
+        android:text="  ABRIR MANEJO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNovoManejo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRemoverManejo"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/remover_lista"
+        android:text="  REMOVER MANEJO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbrirManejo"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <Button
+        android:id="@+id/btnVoltar"
+        style="@style/botoes"
+        android:drawableLeft="@drawable/voltar"
+        android:text="  Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>
